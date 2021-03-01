@@ -2,4 +2,24 @@
     align-items : center;
     scrollbar-color: unset;
     padding: 0.8%;
-     }
+    
+}
+
+.relased {
+    align-items : left;
+    scrollbar-color: unset;
+    padding: 0.8%;
+    
+}
+.movie-poster {
+    height: 100%;
+    width: 50%;
+    display: -webkit-box;
+} 
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 50px;
+    height: 100px; /* Should be removed. Only for demonstration */
+  }

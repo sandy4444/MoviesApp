@@ -9,21 +9,50 @@ import GridListTileBar from "@material-ui/core/GridListTileBar";
 
 class Home extends Component {
   render() {
-    console.log(MoviesData);
+    //console.log(MoviesData);
     return (
       <div>
         <Header></Header>
-        <AppBar position="relative" color="secondary" className="appbar" >
+        <AppBar position="relative" color="secondary" className="appbar">
           Upcoming Movies
         </AppBar>
-        <GridList cols={10}>
+        <GridList cols={MoviesData.length}>
           {MoviesData.map((mov) => (
             <GridListTile key={mov.id}>
-              <img src={mov.poster_url} alt={mov.title} />
+              <img
+                src={mov.poster_url}
+                alt={mov.title}
+                className="movie-poster"
+              />
               <GridListTileBar title={mov.title} />
             </GridListTile>
           ))}
         </GridList>
+        <div>
+          <div className="column">
+            <GridList cols={2} className="relased">
+              {MoviesData.filter((mov) => mov.released == true).map((mov) => (
+                <GridListTile key={mov.id}>
+                  <img
+                    src={mov.poster_url}
+                    alt={mov.title}
+                    className="movie-poster"
+                  />
+                  <GridListTileBar
+                    title={mov.title}
+                    subtitle={
+                      <span>
+                        Release Date:{" "}
+                        {new Date(mov.release_date).toDateString()}
+                      </span>
+                    }
+                  />
+                </GridListTile>
+              ))}
+            </GridList>
+          </div>
+          <div className="column"></div>
+        </div>
       </div>
     );
   }

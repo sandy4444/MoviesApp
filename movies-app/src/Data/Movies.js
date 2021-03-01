@@ -15,6 +15,7 @@ let moviesData = [
         "censor_board_rating": "R",
         "critics_rating": 9.2,
         "status": "PUBLISHED",
+        "released": true,
         "artists": [
             {
                 "id": "A1",
@@ -53,6 +54,7 @@ let moviesData = [
         "censor_board_rating": "PG-13",
         "critics_rating": 9.0,
         "status": "PUBLISHED",
+        "released": true,
         "artists": [
             {
                 "id": "A3",
@@ -91,6 +93,7 @@ let moviesData = [
         "censor_board_rating": "PG-13",
         "critics_rating": 8.8,
         "status": "PUBLISHED",
+        "released": false,
         "artists": [
             {
                 "id": "A5",
@@ -129,6 +132,7 @@ let moviesData = [
         "censor_board_rating": "PG-13",
         "critics_rating": 8.6,
         "status": "PUBLISHED",
+        "released": false,
         "artists": [
             {
                 "id": "A7",
@@ -167,6 +171,7 @@ let moviesData = [
         "censor_board_rating": "NR",
         "critics_rating": 8.6,
         "status": "PUBLISHED",
+        "released": true,
         "artists": [
             {
                 "id": "A9",
@@ -204,6 +209,7 @@ let moviesData = [
         "censor_board_rating": "R",
         "critics_rating": 6.6,
         "status": "PUBLISHED",
+        "released": true,
         "artists": [
             {
                 "id": "A14",
@@ -233,6 +239,7 @@ let moviesData = [
         "censor_board_rating": "R",
         "critics_rating": 8.0,
         "status": "PUBLISHED",
+        "released": false,
         "artists": [
             {
                 "id": "A5",
