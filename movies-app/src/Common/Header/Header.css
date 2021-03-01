@@ -8,3 +8,26 @@
     float: right;
 } 
 
+.form-align {
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+
+} 
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    top: '50%';
+    left: '50%';
+    right: 'auto';
+    bottom: 'auto';
+    marginRight: '-50%';
+    transform: 'translate(-50%, -50%)';
+}
+
