@@ -2,8 +2,7 @@
     align-items : center;
     scrollbar-color: unset;
     padding: 0.8%;
-    
-}
+    }
 
 .relased {
     align-items : left;
@@ -21,5 +20,5 @@
     float: left;
     width: 50%;
     padding: 50px;
-    height: 100px; /* Should be removed. Only for demonstration */
+    /*height: 100px;  Should be removed. Only for demonstration */
   }

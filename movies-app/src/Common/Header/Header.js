@@ -10,6 +10,17 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 import PropTypes from 'prop-types';
 
+const customStyles = {
+  content: {
+      top: '50%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      marginRight: '-50%',
+      transform: 'translate(-50%, -50%)'
+  }
+};
+
 const TabContainer = function (props) {
   return (
     <Typography component="div" className="form-align">
@@ -44,6 +55,7 @@ const Header = () => {
         isOpen={modalState}
         contentLabel="LOGIN"
         onRequestClose={() => setModalState(false)}
+        style={customStyles}
       >
         <Tabs
           value={tabState}
